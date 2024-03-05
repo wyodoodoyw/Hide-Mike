@@ -1,0 +1,32 @@
+{
+	"name": "Hide Mike",
+	"description": "Replace Mike Rousseau's image on the ACAeronet homepage.",
+	"author": "Mood W",
+	"manifest_version": 3,
+	"version": "1.0",
+	"action": {
+		"default_title": "Hide Mike",
+		"default_popup": "index.html"
+	},
+	"content_scripts": [
+		{
+			"matches": ["https://aircanada.sharepoint.com/*"],
+			"run_at": "document_end",
+			"js": ["scripts/Main.js"],
+			"all_frames": true
+		}
+	],
+	"icons": {
+		"16": "icon16.png",
+		"24": "icon24.png",
+		"32": "icon32.png",
+		"48": "icon48.png",
+		"64": "icon64.png",
+		"96": "icon96.png",
+		"128": "icon128.png",
+		"256": "icon256.png",
+		"512": "icon512.png"
+	},
+	"permissions": ["storage"],
+	"short_name": "Hide Mike"
+}
